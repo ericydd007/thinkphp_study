@@ -57,6 +57,7 @@ defined('LANG_PATH')    or define('LANG_PATH',      COMMON_PATH.'Lang/'); // 应
 defined('HTML_PATH')    or define('HTML_PATH',      APP_PATH.'Html/'); // 应用静态目录
 defined('LOG_PATH')     or define('LOG_PATH',       RUNTIME_PATH.'Logs/'); // 应用日志目录
 defined('TEMP_PATH')    or define('TEMP_PATH',      RUNTIME_PATH.'Temp/'); // 应用缓存目录
+defined('THEME_PATH')    or define('THEME_PATH',      APP_PATH.'Home/View/'); // 应用缓存目录
 defined('DATA_PATH')    or define('DATA_PATH',      RUNTIME_PATH.'Data/'); // 应用数据目录
 defined('CACHE_PATH')   or define('CACHE_PATH',     RUNTIME_PATH.'Cache/'); // 应用模板缓存目录
 defined('CONF_EXT')     or define('CONF_EXT',       '.php'); // 配置文件后缀
