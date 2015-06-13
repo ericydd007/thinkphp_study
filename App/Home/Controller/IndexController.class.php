@@ -1,13 +1,16 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Home\Model\MongoModel;
 class IndexController extends Controller{
    public function index(){
-      $data = array(
-      'asdf' => 1,'dfg' => 2,'asdfrg' => 3,'yhnfd' => 4,'bfws' => 1
-    );
-    $this->assign('test',$data);
-    $this->display();
+   
+     $Model =  D("User");
+     // $Model->create();
+     // $Model->name = '流年1';
+     // $Model->add();
+	 
+     $a = $Model->select();
+     var_dump($a);
     }
-    
 }

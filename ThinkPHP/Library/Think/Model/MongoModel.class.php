@@ -54,6 +54,7 @@ class MongoModel extends Model{
             $where[$name] =$args[0];
             return $this->where($where)->getField($args[1]);
         }else{
+		    echo 3344;
             E(__CLASS__.':'.$method.L('_METHOD_NOT_EXIST_'));
             return;
         }
@@ -309,7 +310,10 @@ class MongoModel extends Model{
             }            // 查找符合的记录
             $result = $this->db->select($options);
             if(!empty($result)) {
-                if(1==$options['limit']) return reset($result)[$field];
+                if(1==$options['limit']) {
+				$result = reset($result);
+				return is_array($result)?$result[$field]:$result;
+				}
                 foreach ($result as $val){
                     $array[]    =   $val[$field];
                 }
