@@ -1,0 +1,17 @@
+[ 2015-06-27T21:14:45+08:00 ] 124.113.162.80 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001797s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with that of Think\Model::setInc() /home/wwwroot/think_jiukuaige_com/public_html/ThinkPHP/Library/Think/Model/MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with that of Think\Model::setDec() /home/wwwroot/think_jiukuaige_com/public_html/ThinkPHP/Library/Think/Model/MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with that of Think\Db\Driver::connect() /home/wwwroot/think_jiukuaige_com/public_html/ThinkPHP/Library/Think/Db/Driver/Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with that of Think\Db\Driver::insertAll() /home/wwwroot/think_jiukuaige_com/public_html/ThinkPHP/Library/Think/Db/Driver/Mongo.class.php 第 18 行.
+SQL: test.getCollection(user) [ RunTime:0.0000s ]
+SQL: test.user.find({}) [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004540s ]
+
